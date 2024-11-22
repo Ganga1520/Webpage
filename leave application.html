@@ -1,0 +1,52 @@
+<html>
+    <body>
+    
+        <table border="0" bordercolor="black" bgcolor="violet" width="100%" height="40" align="center">
+            <tr>
+                
+                <th><a href="login.html" style="text-decoration: none;"target="_blank">Login</th></a>
+                <th><a href="register.html" style="text-decoration: none;"target="_blank">Leave application</th></a>
+                <th><a href="applicationform.html" style="text-decoration: none;"target="_blank">Application Status</th></a>
+                <th><a href="hyper.html" style="text-decoration: none;"target="_blank">Contact Us</th></a>
+            </tr>
+        </table>
+        <head>
+            <title> Apply for leave</title>
+        </head>
+        <table border="0"  width="100%">
+            <tr align="left"  >
+                <th> <h1>Leave Application:</h1></th>
+            </tr>
+            </table>
+              <table >
+                 <form action="submitted.html" method="post">
+                 <label for="name">Username:</label>
+                 <input type="text" id="name" name="name" size="30" required><br><br>
+        
+                 <label for="employee_id">Employee_id:</label>
+                 <input type="text" id="employee_id" name="employee_id" size="30" required><br><br>
+        
+                 <label for="leave_type">Leave Type:</label>
+                 <select id="leave_type" name="leave_type" required>
+                    <option value="">Select Leave Type</option>
+                    <option value="Casual Leave">Casual Leave</option>
+                    <option value="Sick Leave">Sick Leave</option>
+                    <option value="Earned Leave">Earned Leave</option>
+                    <option value="Other">Other</option>
+                 </select><br><br>
+        
+                 <label for="start_date">Start Date:</label>
+                 <input type="date" id="start_date" name="start_date" required><br><br>
+        
+                 <label for="end_date">End Date:</label>
+                 <input type="date" id="end_date" name="end_date" required><br><br>
+        
+                 <label for="reason">Reason for Leave:</label><br>
+                <textarea id="reason" name="reason" rows="5" cols="40" required></textarea><br><br>
+                 <center>
+                 <input type="submit"  value="Submit Application">
+                </center>
+            </form>
+        </table>
+    </body>
+</html>
